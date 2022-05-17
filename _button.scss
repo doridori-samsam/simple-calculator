@@ -1,0 +1,35 @@
+form input{
+    // border:1px solid dodgerblue;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    &:hover:not(.screen){
+        background-color: dodgerblue;
+    }
+    &[type="text"]{
+        grid-column: span 4;
+        text-align: right;
+        padding: 0 10px;
+        color:white;
+    }
+}
+
+form {
+    .screen{
+        background-color: black;
+    }
+    .clear{
+        grid-column: span 3;
+        background-color: violet;
+    }
+    .operator{
+        background-color: darkmagenta;
+    }
+    .punct{
+        background-color: pink;
+    }
+    .result{
+        grid-column: span 2;
+    }
+}
