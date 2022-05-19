@@ -12,8 +12,8 @@
 </head>
 <body>
     <main class="calculator">
-    <form name="forms">
-        <input type="text" class="screen" name="output" placeholder="Hello 👋">
+    <form name="forms" onsubmit="return false;"> <!--엔터키 누른 후 결과값 submit 방지-->
+        <input type="text" class="screen" name="output" autofocus="autofocus" placeholder="Hello 👋">
         <input type="button" class="operator clear" value="C">
         <input type="button" class="operator" value="/">
         <input type="button" class="num" value="1">
